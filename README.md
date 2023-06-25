@@ -48,29 +48,6 @@ end
 result = square(5)
 println(result)  # Output: 25
 ```
-## Control Flow
-Julia provides a variety of control flow constructs, such as conditional statements (if, else, elseif), loops (for, while), and more. These constructs allow you to control the flow of execution in your programs and make decisions based on conditions.
-
-Here's an example that demonstrates the usage of control flow constructs in Julia:
-```julia 
-# Integers and floating-point numbers
-x = 42
-y = 3.14
-
-# Booleans
-is_true = true
-is_false = false
-
-# Strings
-name = "Julia"
-
-# Arrays
-numbers = [1, 2, 3, 4, 5]
-matrix = [1 2 3; 4 5 6; 7 8 9]
-
-# Dictionaries
-grades = Dict("Alice" => 95, "Bob" => 85, "Charlie" => 90)
-```
 ## Data Types
 Julia provides a rich set of built-in data types, including integers, floating-point numbers, booleans, strings, arrays, dictionaries, and more. It also supports user-defined types and multiple dispatch, allowing you to create complex data structures and define custom behaviors.
 
@@ -98,11 +75,48 @@ while i <= 5
     i += 1
 end
 ```
+## Control Flow
+Julia provides a variety of control flow constructs, such as conditional statements (if, else, elseif), loops (for, while), and more. These constructs allow you to control the flow of execution in your programs and make decisions based on conditions.
+
+Here's an example that demonstrates the usage of control flow constructs in Julia:
+```julia 
+# Integers and floating-point numbers
+x = 42
+y = 3.14
+
+# Booleans
+is_true = true
+is_false = false
+
+# Strings
+name = "Julia"
+
+# Arrays
+numbers = [1, 2, 3, 4, 5]
+matrix = [1 2 3; 4 5 6; 7 8 9]
+
+# Dictionaries
+grades = Dict("Alice" => 95, "Bob" => 85, "Charlie" => 90)
+```
+
 ## Functions
 In Julia, functions are a fundamental building block of code organization and reuse. You can define your own functions to encapsulate a specific task and then call them as needed. Julia also supports multiple dispatch, which allows you to define functions with the same name but different argument types, enabling polymorphic behavior.
 
 Here's an example that demonstrates defining and using functions in Julia:
+```julia
+# Define a function to calculate the factorial of a number
+function factorial(n)
+    if n == 0 || n == 1
+        return 1
+    else
+        return n * factorial(n - 1)
+    end
+end
 
+# Call the function with an argument
+result = factorial(5)
+println(result)  # Output: 120
+```
 
 ## Packages
 Julia has a rich ecosystem of packages that provide additional functionality and extend the capabilities of the language. You can use the Julia package manager, Pkg, to install and manage packages. The official Julia package registry, JuliaHub, is a great resource for discovering and exploring packages.
