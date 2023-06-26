@@ -129,11 +129,12 @@ Pkg.add("ExamplePackage")
 ```
 
 ## Resources
-Official Julia Documentation
-Julia Discourse - Official Julia community forum
-JuliaHub - Julia package registry and community website
-JuliaAcademy - Online Julia courses and learning resources
-Contributing
+Official Julia Documentation <br/>
+Julia Discourse - Official Julia community forum <br/>
+JuliaHub - Julia package registry and community website <br/>
+JuliaAcademy - Online Julia courses and learning resources <br/> 
+
+## Contributing
 Contributions to this repository are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request.
 ## License
 This repository is licensed under the MIT License.
